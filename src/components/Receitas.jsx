@@ -20,6 +20,7 @@ export default function Receitas(){
     },[])
 
     return (
+        
         <div className="bg">
 
             <header  id="home">
@@ -154,7 +155,16 @@ export default function Receitas(){
 
 
             <div className="addreceita">
-                <form className="form" action="">
+
+                <h1></h1>
+
+                <form className="form">
+                    
+                    <div className="nomereceita">
+                        <label htmlFor="">Nome da receita:</label>
+                        <input type="text" name="nomereceita" id="nomedareceita"/>
+                    </div>
+                    
 
                 </form>
             </div>

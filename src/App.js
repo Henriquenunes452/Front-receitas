@@ -5,6 +5,7 @@ import Receitas from "./components/Receitas";
 import ReceitasUsuario from "./components/ReceitasUsuario";
 import ReceitasDoces from "./components/ReceitasDoces";
 import ReceitasSalgadas from "./components/ReceitasSalgadas";
+import CadastroReceitas from "./components/cadastroreceitas";
 import './reset.css';
 import './assets/style.css';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/receitas/usuario" element={<ReceitasUsuario />} />
         <Route path="/categoria/salgadas" element={<ReceitasSalgadas />} />
         <Route path="/categoria/doces" element={<ReceitasDoces />} />
+        <Route path="/cadastro/receitas" element={<CadastroReceitas />} />
       </Routes>
     </BrowserRouter>
 
