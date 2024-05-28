@@ -313,6 +313,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .cadastro h2{
+    margin-top: 10px;
     font-size: 50px;
     font-weight: 600;
     color: #fa5e00;
@@ -320,9 +321,12 @@ body::-webkit-scrollbar-thumb{
 }
 
 .test{
-   margin: 10px;
-   font-size: 20px;
-   font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 input {
@@ -331,6 +335,7 @@ input {
     font-size: 20px;
     border: none;
     width: 300px;
+    min-height: 20px;
 }
 
 .cadastrouser {
@@ -353,11 +358,4 @@ input {
 .botaoreturn button{
     margin: 20px;
     width: 100px;
-}
-
-.{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
 }

@@ -15,7 +15,7 @@ export default function CadastroReceitas(){
     return (
         <div className="bg">
 
-            <form action=""></form>
+            
 
         </div>
     )

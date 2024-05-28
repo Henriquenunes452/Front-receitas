@@ -14,29 +14,29 @@ export default function Login(){
 
 
 
-                <h2>login</h2>
+                <h2>Login</h2>
 
 
                 <form className="formcadastro">
 
 
-                    <div>
+                    
 
-                        <label className="test" for="username">Nome de Usuário:</label>
-                        <input type="text" id="username" name="username"required/>
-
-
-                    </div>
+                    <label className="test" for="username">Nome de Usuário:</label>
+                    <input type="text" id="username" name="username"required/>
 
 
+                    
 
-                    <div>
 
 
-                        <label className="test" for="cpf">CPF:</label>                    
-                        <input type="text" id="cpf" name="cpf"required/>
+                    
 
-                    </div>
+
+                    <label className="test" for="cpf">CPF:</label>                    
+                    <input type="text" id="cpf" name="cpf"required/>
+
+                    
 
 
 
