@@ -9,6 +9,9 @@ import './reset.css';
 import './assets/style.css';
 
 function App() {
+
+
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -16,10 +19,12 @@ function App() {
         <Route path="/cadastro" element={<Cadastro />} />
         <Route path="/receitas" element={<Receitas />} />
         <Route path="/receitas/usuario" element={<ReceitasUsuario />} />
-        <Route path="/receitas/salgadas" element={<ReceitasSalgadas />} />
-        <Route path="/receitas/doces" element={<ReceitasDoces />} />
+        <Route path="/categoria/salgadas" element={<ReceitasSalgadas />} />
+        <Route path="/categoria/doces" element={<ReceitasDoces />} />
       </Routes>
     </BrowserRouter>
+
+
   );
 }
 
