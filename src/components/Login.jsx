@@ -1,7 +1,7 @@
 export default function Login(){
     return (
         <>
-        <div class="login-container">
+        <div className="login-container">
         <h2>login</h2>
         <form id="loginForm">
             <label for="username">Username:</label>
@@ -10,7 +10,7 @@ export default function Login(){
             <input type="cpf" id="cpf" required>
             <button type="button" onclick="checklogin()">login</button>
             <a href="file:///C:/Users/Henrique/Desktop/receitas/cadastro.html>
-            <button type="button" onclick="cadastre">cadastre</button>
+            <button type="button ","onclick="cadastre">cadastre</button>
         </form>
     </div>
         </>

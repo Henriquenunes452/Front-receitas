@@ -1,7 +1,6 @@
 export default function Cadastro(){
     return (
-        <>
-            <div class="container">
+        <div className ="container">
         <h2>Cadastro de Usuário</h2>
         <form id="registrationForm" onsubmit="return validateForm()">
             <label for="username">Nome de usuário:</label>
@@ -30,6 +29,7 @@ export default function Cadastro(){
             <input type="submit" value="Cadastrar">
         </form>
     </div>
-        </>
+            
+        </input>
     )
 }
