@@ -5,7 +5,7 @@ import Receitas from "./components/Receitas";
 import ReceitasUsuario from "./components/ReceitasUsuario";
 import ReceitasDoces from "./components/ReceitasDoces";
 import ReceitasSalgadas from "./components/ReceitasSalgadas";
-import CadastroReceitas from "./components/cadastroreceitas";
+import CadastroReceitas from "./components/CadastroReceitas";
 import './reset.css';
 import './assets/style.css';
 
