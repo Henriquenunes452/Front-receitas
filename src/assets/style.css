@@ -5,7 +5,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
+    background: url(imgs/bg1.png) no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
 html {
@@ -19,11 +21,7 @@ html {
 
 
 
-.bg {
-    background: url(imgs/bg2.png) no-repeat;
-    background-size: cover;
-    height: auto;
-}
+
 
 .container {
     max-width: 1330px;
@@ -300,4 +298,66 @@ body::-webkit-scrollbar-thumb{
     width: 350px;
     border-radius: 20px;
     margin-top: 10px;
+}
+
+.cadastro {
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    justify-content: center;  
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.cadastro h2{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fa5e00;
+    margin-bottom: 100px;
+}
+
+.test{
+   margin: 10px;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+input {
+    border-radius: 3px;
+    box-shadow: 3px 2px 15px #2b2b2b3d;
+    font-size: 20px;
+    border: none;
+    width: 300px;
+}
+
+.cadastrouser {
+    color: #fa6000f3;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;  
+    justify-content: center;  
+    height: 90%;
+    width: 600px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    box-shadow: 3px 0px 15px #545454;
+    border-radius: 10px;
+
+}
+
+.botaoreturn button{
+    margin: 20px;
+    width: 100px;
+}
+
+.{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }

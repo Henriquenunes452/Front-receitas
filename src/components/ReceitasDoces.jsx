@@ -32,7 +32,7 @@ export default function ReceitasDoces(){
                     </div>
                 </div>
                 <button id="back-to-top">^</button>
-          </header>
+            </header>
 
             <div className="titulo">
 

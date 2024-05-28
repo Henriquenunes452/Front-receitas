@@ -5,18 +5,57 @@ export default function Login(){
     const navigate=useNavigate()
 
     return (
-        <>
-        <div className="login-container bg">
-            <h2>login</h2>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" required/>
-                <label for="cpf">cpf:</label>
-                <input type="cpf" id="cpf" required/>
-                <button onClick="checklogin()">Login</button>
-                <button onClick={()=>{navigate("/cadastro")}}>Cadastro</button>
-            </form>
+
+        <div className="cadastro bg">
+
+
+            <div className="cadastrouser">
+
+
+
+
+                <h2>login</h2>
+
+
+                <form className="formcadastro">
+
+
+                    <div>
+
+                        <label className="test" for="username">Nome de Usuário:</label>
+                        <input type="text" id="username" name="username"required/>
+
+
+                    </div>
+
+
+
+                    <div>
+
+
+                        <label className="test" for="cpf">CPF:</label>                    
+                        <input type="text" id="cpf" name="cpf"required/>
+
+                    </div>
+
+
+
+                    <div className="botaoreturn">
+
+                        <button onClick="checklogin()">Login</button>
+                        <button onClick={()=>{navigate("/cadastro")}}>Cadastro</button>
+
+
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
         </div>
-        </>
+
     )
 }
