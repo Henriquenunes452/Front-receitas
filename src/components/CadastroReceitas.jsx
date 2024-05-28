@@ -1,3 +1,7 @@
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+
+
 export default function CadastroReceitas(){
 
     
@@ -11,7 +15,7 @@ export default function CadastroReceitas(){
     return (
         <div className="bg">
 
-
+            <form action=""></form>
 
         </div>
     )
