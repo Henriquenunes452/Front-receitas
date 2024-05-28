@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap');
+
+.bg {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+html {
+    height: 100%;
+}
+
+.max-widht {
+    width: 100%;
+    min-height: 5400px;
+}
+
+
+
+.bg {
+    background: url(imgs/bg2.png) no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.logo {
+    background: url(imgs/logoreceitas.png) no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 120px;
+    position: relative;
+    z-index: 9;
+    margin-top: 10px;
+}
+
+.text-gd {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.text-md {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.text-pq {
+    font-size: 14px;
+}
+
+.text-title {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.color-laranja {
+    color: #fa5e00;
+}
+
+.color-cinza-1 {
+    color: #2b2b2b;
+}
+
+.color-cinza-2 {
+    color: #545454;
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.left {
+    width:60%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+.right {
+    width: 50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+}
+
+img {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+}
+
+button {
+    padding: 10px 20px;
+    background: #fa5e00;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    border: 1px solid #fa5e00;
+    background: #fff;
+    color: #fa5e00;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 2%;
+    width: 100%;
+    min-height: 100px;
+}
+
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    min-height: 300px;
+}
+
+.titulo {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.info {
+    display: flex;
+}
+
+.desktop-menu ul {
+    display: flex;
+}
+
+.desktop-menu ul li {
+    padding: 0 25px;
+    list-style-type: none;
+}
+
+.desktop-menu ul li a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+.desktop-menu ul li a:hover {
+    color: #fa5e00;
+    font-weight: 500;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 2px;
+    right: 10px;
+    padding: 5px 10px;
+    background: #2b2b2b;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #2b2b2b;
+    border-radius: 20px;
+    border: 1px;
+}
+
+#home .container {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#home .right {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#home .right h1 {
+    text-align: end;
+}
+
+#home .right h2 {
+    text-align: end;
+    margin-top: 20px;
+}
+
+#home .right p {
+    text-align: end;
+    margin-top: 20px;
+}
+
+#home .right button {
+    margin-top: 30px;
+}
+
+#about .left {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#about .left span {
+    margin-top: 20px;
+}
+
+#about .left h2 {
+    margin-top: 20px;
+}
+
+#about .left p {
+    margin-top: 20px;
+}
+
+#about .left button {
+    margin-top: 20px;
+}
+
+#about .right img {
+    border-radius: 30px;
+} 
+
+
+
+.box {
+    width: 50%;
+    
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rctslg {
+    border-radius: 20px;
+    height: 300px;
+    width: 400px;
+    margin-top: 50px;
+}
+.receitassalgadas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 100px;
+}
+
+.fts {
+    height: 220px;
+    width: 350px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
