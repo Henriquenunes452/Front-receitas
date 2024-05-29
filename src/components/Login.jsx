@@ -1,8 +1,34 @@
 import { useNavigate } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
+import { useState } from "react";
+import api from "../Api";
 
 export default function Login(){
-
+    const { signIn } = useAuth();
     const navigate=useNavigate()
+
+    const [login, setLogin] = useState({
+        nome: "",
+        cpf: "",
+    });
+
+    function handleLogin(e) {
+        setLogin({ ...login, [e.target.name]: e.target.value });
+    }
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+        try {
+            const verificar = await api.login(login);
+            if (Object.keys(verificar.data.result).length != 0){
+                signIn(verificar.data.result.nome,verificar.data.result.cpf);
+                navigate("/receitas");
+            }
+        } catch (error) {
+            console.log(error)
+            return
+        }
+    }
 
     return (
 
@@ -22,9 +48,8 @@ export default function Login(){
 
                     
 
-                    <label className="test" for="username">Nome de Usuário:</label>
-                    <input type="text" id="username" name="username"required/>
-
+                    <label className="test" for="nome">Nome de Usuário:</label>
+                    <input type="text" id="username" name="nome" onChange={handleLogin} required/>
 
                     
 
@@ -34,7 +59,7 @@ export default function Login(){
 
 
                     <label className="test" for="cpf">CPF:</label>                    
-                    <input type="text" id="cpf" name="cpf"required/>
+                    <input type="text" id="cpf" name="cpf" onChange={handleLogin} required/>
 
                     
 
@@ -42,7 +67,7 @@ export default function Login(){
 
                     <div className="botaoreturn">
 
-                        <button onClick="checklogin()">Login</button>
+                        <button onClick={handleSubmit}>Login</button>
                         <button onClick={()=>{navigate("/cadastro")}}>Cadastro</button>
 
 

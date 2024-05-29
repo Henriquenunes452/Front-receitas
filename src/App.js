@@ -6,6 +6,7 @@ import ReceitasUsuario from "./components/ReceitasUsuario";
 import ReceitasDoces from "./components/ReceitasDoces";
 import ReceitasSalgadas from "./components/ReceitasSalgadas";
 import CadastroReceitas from "./components/CadastroReceitas";
+import { AuthProvider } from "./contexts/AuthContext";
 import './reset.css';
 import './assets/style.css';
 
@@ -14,6 +15,7 @@ function App() {
 
   
   return (
+    <AuthProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
@@ -25,7 +27,7 @@ function App() {
         <Route path="/cadastro/receitas" element={<CadastroReceitas />} />
       </Routes>
     </BrowserRouter>
-
+    </AuthProvider>
 
   );
 }
