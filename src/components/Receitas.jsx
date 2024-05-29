@@ -154,56 +154,6 @@ export default function Receitas(){
             </section>
 
 
-            <div className="addreceita">
-
-                <h1></h1>
-
-                <form className="form">
-                    
-                    <div className="nomereceita">
-                        <label htmlFor="">Nome da receita:</label>
-                        <input type="text" name="nomereceita" id="nomedareceita"/>
-                    </div>
-                    
-
-                </form>
-            </div>
-
-
-            <header  id="home">
-                <div className="container">
-                    <div className="menu">
-                        <div className="logo"></div>
-                        <div className="desktop-menu">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">Sobre</a></li>
-                                <li><a href="#receitas">Receitas</a></li>
-                                <li><a href="#">Dicas</a></li>
-                                <li><a href="#">Contato</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div className="call">
-                        <div className="left">
-                            <img src={temperos} alt=""/>
-                        </div>
-                        <div className="right">
-                            <h1 className="color-laranja text-gd">Receitas Deliciosas</h1>
-                            <h2 className="color-cinza-1 text-md">Faça você mesmo comidas de restauluxuososrantes </h2>
-                            <p className="text-pq">
-                                Neste site você encontrará receitas de dar água na boca, com instruções fáceis, didáticas 
-                                e rápidas. Saboreie essas explosões de sabores!
-                            </p>
-                            <button>Ver receitas</button>
-                        </div>
-                    </div>
-                </div>
-                <button id="back-to-top" onClick={()=>{window.scrollTo(0,0)}}>^</button>
-            </header>
-
-
         </div>
     )
 }
