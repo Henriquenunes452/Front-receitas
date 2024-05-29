@@ -1,18 +1,11 @@
 import temperos from "../assets/imgs/temperos.png";
 import comida1 from "../assets/imgs/imgcomida1.png";
-import empadinha from "../assets/imgs/empadinha.png";
-import coxinha from "../assets/imgs/coxinhafrango.png";
-import frango from "../assets/imgs/frangofritoimg.png";
-import torta from "../assets/imgs/tortamorango.png";
-import pudim from "../assets/imgs/pudimft.png";
-import bombom from "../assets/imgs/trufamaracuja.png";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import Menu from "./compartilhado/Menu";
+import CategoriasContainer from "./compartilhado/CategoriasContainer";
 
 export default function Receitas(){
-    
-
     const navigate=useNavigate()
 
     useEffect(()=>{
@@ -20,9 +13,7 @@ export default function Receitas(){
     },[])
 
     return (
-
         <div className="bg">
-
             <header  id="home">
                 <div className="container">
                     <Menu/>
@@ -44,7 +35,6 @@ export default function Receitas(){
                 <button id="back-to-top" onClick={()=>{window.scrollTo(0,0)}}>^</button>
             </header>
 
-
             <section  id="about">
                 <div className="container">
                     <div className="call">
@@ -65,81 +55,9 @@ export default function Receitas(){
                 </div>
             </section>
 
+            <CategoriasContainer tipo={'salgadas'}/>
 
-            <section className="max-width" id="receitas">
-                <div className="container">
-                    <div className="content">
-                        <div className="titulo">
-
-                            <span className="text-title color-laranja">Receitas</span>
-                            <h2 className="text-md color-cinza-1">Receitas Salgadas</h2>
-
-                            <div className="receitassalgadas">
-
-                                <div className="box">
-                                    <button className="rctslg">
-                                        <h2>Empadinha de camarão</h2>
-                                        <img className="fts" src={empadinha} alt=""/>
-                                    </button>
-                                </div>
-                                <div className="box">
-                                    <button className="rctslg">
-                                        <h2>Coxinha de frango</h2>
-                                        <img className="fts" src={coxinha} alt=""/>
-                                    </button>
-                                </div>
-                                <div className="box">
-                                    <button className="rctslg">
-                                        <h2>Frango frito</h2>
-                                        <img className="fts" src={frango} alt=""/>
-                                    </button>
-                                    
-                                </div>
-
-                            </div>
-                            
-                            <button onClick={()=>{navigate("/categoria/salgadas")}}>Ver Todas</button> 
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section classNam id="receitas">
-                <div className="container">
-                    <div className="content">
-                        <div className="titulo">
-
-                            
-                            <h2 className="text-md color-cinza-1">Receitas Doces</h2>
-
-                            <div className="receitassalgadas">
-
-                                <div className="box">
-                                    <button className="rctslg">
-                                        <h2>Torta de Morango</h2>
-                                        <img className="fts" src={torta} alt=""/>
-                                    </button>
-                                </div>
-                                <div className="box">
-                                    <button className="rctslg">
-                                        <h2>Pudim</h2>
-                                        <img className="fts"src={pudim} alt=""/>
-                                    </button>
-                                </div>
-                                <div className="box">
-                                    <button className="rctslg">
-                                        <h2>Bombom de Maracujá</h2>
-                                        <img className="fts" src={bombom} alt=""/>
-                                    </button>
-                                </div>
-
-                            </div>
-                            <button onClick={()=>{navigate("/categoria/doces")}}>Ver Todas</button> 
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <CategoriasContainer tipo={'doces'}/>
 
             <div className="receitasuser ">
 

@@ -31,56 +31,23 @@ export default function Login(){
     }
 
     return (
-
         <div className="cadastro bg">
-
-
             <div className="cadastrouser">
-
-
-
-
                 <h2>Login</h2>
 
-
                 <form className="formcadastro">
-
-
-                    
-
-                    <label className="test" for="nome">Nome de Usuário:</label>
+                    <label className="test" htmlFor="nome">Nome de Usuário:</label>
                     <input type="text" id="username" name="nome" onChange={handleLogin} required/>
 
-                    
-
-
-
-                    
-
-
-                    <label className="test" for="cpf">CPF:</label>                    
+                    <label className="test" htmlFor="cpf">CPF:</label>                    
                     <input type="text" id="cpf" name="cpf" onChange={handleLogin} required/>
 
-                    
-
-
-
                     <div className="botaoreturn">
-
                         <button onClick={handleSubmit}>Login</button>
                         <button onClick={()=>{navigate("/cadastro")}}>Cadastro</button>
-
-
                     </div>
-
-
                 </form>
-
-
             </div>
-
-
         </div>
-
     )
 }

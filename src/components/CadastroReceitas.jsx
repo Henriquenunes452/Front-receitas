@@ -11,7 +11,7 @@ export default function CadastroReceitas(){
     useEffect(()=>{
         if (!nome || !cpf ) navigate("/");
         window.scrollTo(0,0);
-    },[])
+    },[nome,cpf,navigate])
 
     return (
         <div className="cadastro bg">
@@ -22,23 +22,23 @@ export default function CadastroReceitas(){
 
             <form action="">
 
-                <label className="test" for="nome">Nome da receita:</label>
-                <input type="text" id="nome" riquired/>
+                <label className="test" htmlFor="nome">Nome da receita:</label>
+                <input type="text" id="nome" required/>
 
-                <label className="test" for="descricao">Descrição da receita:</label>
-                <input type="text" id="descricao" riquired/>
+                <label className="test" htmlFor="descricao">Descrição da receita:</label>
+                <input type="text" id="descricao" required/>
 
-                <label className="test" for="ingredientes">Ingredientes:</label>
-                <input type="text" id="ingredientes" riquired/>
+                <label className="test" htmlFor="ingredientes">Ingredientes:</label>
+                <input type="text" id="ingredientes" required/>
 
-                <label className="test" for="preparo">Modo de preparo:</label>
-                <input type="text" id="preparo" riquired/>
+                <label className="test" htmlFor="preparo">Modo de preparo:</label>
+                <input type="text" id="preparo" required/>
 
-                <label className="test" for="img">Imagem da receita:</label>
-                <input type="file" name="arquivos" class="btn btn-success" multiple/>
+                <label className="test" htmlFor="img">Imagem da receita:</label>
+                <input type="file" name="arquivos" className="btn btn-success" multiple/>
 
-                <label className="test" for="nome">Nome da receita:</label>
-                <input type="text" id="nome" riquired/>
+                <label className="test" htmlFor="nome">Nome da receita:</label>
+                <input type="text" id="nome" required/>
 
                 <div className="botaoreturn">
 
