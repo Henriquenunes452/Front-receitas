@@ -4,6 +4,7 @@ import empadinha from "../assets/imgs/empadinha.png";
 import coxinha from "../assets/imgs/coxinhafrango.png";
 import frango from "../assets/imgs/frangofritoimg.png";
 import { useEffect } from "react";
+import Menu from "./compartilhado/Menu";
 
 
 export default function ReceitasSalgadas(){
@@ -20,18 +21,7 @@ export default function ReceitasSalgadas(){
 
             <header  id="home">
                 <div className="containersec">
-                    <div className="menu">
-                        <div className="logo"></div>
-                        <div className="desktop-menu">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">Sobre</a></li>
-                                <li><a href="#receitas">Receitas</a></li>
-                                <li><a href="#">Dicas</a></li>
-                                <li><a href="#">Contato</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    <Menu/>
                 </div>
                 <button id="back-to-top">^</button>
             </header>

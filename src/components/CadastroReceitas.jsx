@@ -1,14 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import useAuth from "../hooks/useAuth";
 
 
 export default function CadastroReceitas(){
-
-    
+    const {nome, cpf} = useAuth();
 
     const navigate=useNavigate()
 
     useEffect(()=>{
+        if (!nome || !cpf ) navigate("/");
         window.scrollTo(0,0);
     },[])
 

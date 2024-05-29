@@ -8,9 +8,9 @@ import pudim from "../assets/imgs/pudimft.png";
 import bombom from "../assets/imgs/trufamaracuja.png";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import Menu from "./compartilhado/Menu";
 
 export default function Receitas(){
-
     
 
     const navigate=useNavigate()
@@ -25,19 +25,7 @@ export default function Receitas(){
 
             <header  id="home">
                 <div className="container">
-                    <div className="menu">
-                        <div className="logo"></div>
-                        <div className="desktop-menu">
-                            <ul>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">Sobre</a></li>
-                                <li><a href="#receitas">Receitas</a></li>
-                                <li><a href="#">Dicas</a></li>
-                                <li><a href="#">Contato</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
+                    <Menu/>
                     <div className="call">
                         <div className="left">
                             <img src={temperos} alt=""/>

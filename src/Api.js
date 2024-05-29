@@ -14,14 +14,12 @@ function requestConfig(nome,cpf) {
 }
 
 async function cadastrar({nome, cpf, sexo, endereco, telefone, data_nascimento}) {
-    await baseAPI.post("/usuario",{nome, cpf, sexo, endereco, telefone, data_nascimento});
+    return baseAPI.post("/usuario",{nome, cpf, sexo, endereco, telefone, data_nascimento});
 }
   
 async function login({nome, cpf}) {
     return baseAPI.post("/login", {nome, cpf});
 }
-
-
 
 const api = {
     cadastrar,

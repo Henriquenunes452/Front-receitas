@@ -4,8 +4,8 @@ import { useState } from "react";
 import api from "../Api";
 
 export default function Login(){
-    const { signIn } = useAuth();
-    const navigate=useNavigate()
+    const { logar } = useAuth();
+    const navigate = useNavigate();
 
     const [login, setLogin] = useState({
         nome: "",
@@ -20,8 +20,8 @@ export default function Login(){
         e.preventDefault();
         try {
             const verificar = await api.login(login);
-            if (Object.keys(verificar.data.result).length != 0){
-                signIn(verificar.data.result.nome,verificar.data.result.cpf);
+            if (Object.keys(verificar.data.result).length !== 0){
+                logar(verificar.data.result.nome,verificar.data.result.cpf);
                 navigate("/receitas");
             }
         } catch (error) {
