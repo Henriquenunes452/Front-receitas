@@ -21,6 +21,21 @@ export default function CadastroReceitas(){
     function handleReceita(e) {
         setReceita({ ...receita, [e.target.name]: e.target.value });
     }
+
+    function handleFileChange(e) {
+        console.log(e.target)
+        const file = e.target.files[0];
+        if (!file) {
+          return;
+        }
+    
+        const reader = new FileReader();
+        const arquivo = reader.readAsDataURL(file);
+        reader.onload = (e) => {
+          setReceita({ ...receita, imagem: e.target.result });
+        };
+        console.log(e.target.result)
+    };
     
     async function handleSubmit(e) {
         e.preventDefault();
@@ -71,9 +86,8 @@ export default function CadastroReceitas(){
                 <label className="test" htmlFor="modo_preparo">Modo de preparo:</label>
                 <textarea rows="4" name="modo_preparo" onChange={handleReceita} required/>
 
-
                 <label className="test" htmlFor="imagem">Imagem da receita:</label>
-                <input type="file" name="imagem" className="btn btn-success" accept="image/*"/>
+                <input type="file" name="imagem" className="btn btn-success" accept="image/*" onChange={handleFileChange} required/>
 
                 <div className="botaoreturn">
                     <button onClick={handleSubmit}>Cadastrar</button>

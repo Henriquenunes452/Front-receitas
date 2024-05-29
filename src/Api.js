@@ -13,12 +13,12 @@ function requestConfig(nome, cpf) {
     };
 }
 
-async function cadastrarReceitas({nome_receita, categoria, ingredientes, modo_preparo, tempo_preparo},{nome,cpf}) {
+async function cadastrarReceitas({nome_receita, categoria, ingredientes, modo_preparo, tempo_preparo, imagem},{nome,cpf}) {
     const config = requestConfig(nome,cpf)
     const usuario = await login({nome, cpf});
     const id_usuario = usuario.data.result.id;
 
-    return baseAPI.post("/receita",{nome_receita, categoria, ingredientes, modo_preparo, tempo_preparo, id_usuario},config);
+    return baseAPI.post("/receita",{nome_receita, categoria, ingredientes, modo_preparo, tempo_preparo, id_usuario, imagem},config);
 }
   
 async function cadastrar({nome, cpf, sexo, endereco, telefone, data_nascimento}) {
