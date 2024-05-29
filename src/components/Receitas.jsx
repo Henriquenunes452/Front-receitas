@@ -117,7 +117,7 @@ export default function Receitas(){
                 </div>
             </section>
 
-            <section className="max-width" id="receitas">
+            <section classNam id="receitas">
                 <div className="container">
                     <div className="content">
                         <div className="titulo">
@@ -152,6 +152,14 @@ export default function Receitas(){
                     </div>
                 </div>
             </section>
+
+            <div className="receitasuser ">
+
+                <h2>Quer cadastrar sua receita? Clique no botão abaixo!</h2>
+
+                <button onClick={()=>{navigate("/cadastro/receitas")}}>Cadastre sua receita!</button>
+            </div>
+            
 
 
         </div>

@@ -334,7 +334,7 @@ input {
     box-shadow: 3px 2px 15px #2b2b2b3d;
     font-size: 20px;
     border: none;
-    width: 300px;
+    width: 500px;
     min-height: 20px;
 }
 
@@ -357,5 +357,31 @@ input {
 
 .botaoreturn button{
     margin: 20px;
-    width: 100px;
+    width: 100px;   
+}
+
+input :hover {    
+    box-shadow: 3px 0px 15px #fa5e00;
+}
+
+.receitasuser {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.receitasuser h2 {
+    font-size: 47px;
+    font-weight: 600;
+    color: #fa5e00;
+    margin: 50px;
+}
+
+.receitasuser button {
+    border-radius: 15px;
+}
+
+.receitasuser button:hover {
+    box-shadow: 3px 0px 15px #fa5e00;
 }
