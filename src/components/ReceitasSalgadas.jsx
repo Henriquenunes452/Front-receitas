@@ -1,5 +1,3 @@
-import temperos from "../assets/imgs/temperos.png";
-import comida1 from "../assets/imgs/imgcomida1.png";
 import empadinha from "../assets/imgs/empadinha.png";
 import coxinha from "../assets/imgs/coxinhafrango.png";
 import frango from "../assets/imgs/frangofritoimg.png";

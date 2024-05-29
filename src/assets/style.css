@@ -314,11 +314,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 .cadastro h2{
-    margin-top: 10px;
     font-size: 50px;
     font-weight: 600;
     color: #fa5e00;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .test{
@@ -330,7 +329,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: 700;
 }
 
-input {
+input, textarea {
     border-radius: 3px;
     box-shadow: 3px 2px 15px #2b2b2b3d;
     font-size: 20px;
@@ -385,4 +384,13 @@ input :hover {
 
 .receitasuser button:hover {
     box-shadow: 3px 0px 15px #fa5e00;
+}
+
+.small {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+.smallInput {
+    width: min-content;
 }

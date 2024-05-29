@@ -31,7 +31,7 @@ export default function CategoriasContainer({tipo}){
           id_usuario: 2,
         },
         {
-          nome_receita: "Fragon frito",
+          nome_receita: "Frango frito",
           imagem:frango,
           ingredientes:'',
           modo_preparo:'',
@@ -79,7 +79,7 @@ export default function CategoriasContainer({tipo}){
 
                         <div className="receitassalgadas">
                             {receitas.filter(receita => receita.categoria === tipo).map(receita=>{ return (
-                                <div key={receita} className="box">
+                                <div key={receita.nome_receita} className="box">
                                     <button className="rctslg">
                                         <h2>{receita.nome_receita}</h2>
                                         <img className="fts" src={receita.imagem} alt=""/>
