@@ -16,7 +16,8 @@ export default function Informacoes(){
         getReceita();
     },[])
 
-    return(<div className="bg">
+    return(
+    <div className="bg">
         <header  id="home">
             <div className="container">
                 <Menu/>
@@ -24,34 +25,45 @@ export default function Informacoes(){
                     <div className="left receitaImg">
                         <img src={receita.imagem} alt=""/>
                     </div>
-                    <div className="right">
+                    <div className="rightInfo">
                         <h2 className="color-laranja text-gd">{receita.nome_receita}</h2>
-                        <h3 className="text-md">{receita.categoria}</h3>
-                        <p className="text-pq">
-                            {receita.tempo_preparo} minutos
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </header>
 
-        <section >
-            <div className="container">
-                <div className="call">
-                    <div className="left">
+                        <span className="text-title color-laranja">Categoria:</span>
+                        <p className="text-pq">
+                            {receita.categoria}
+                        </p>
+
+                        <span className="text-title color-laranja">Tempo de preparo:</span>
+                        <p className="text-pq">
+                           Tempo de preparo: {receita.tempo_preparo} minutos
+                        </p>
+
                         <span className="text-title color-laranja">Ingredientes</span>
                         <p>
                             {receita.ingredientes}
                         </p>
-                    </div>
-                    <div className="right">
+
                         <span className="text-title color-laranja">Modo de preparo</span>
-                            <p>
-                                {receita.modo_preparo}
-                            </p>
+                        <p>
+                            {receita.modo_preparo}
+                        </p>
+
+
+                        
                     </div>
+                    {/*<section >
+                        <div className="container">
+                            <div className="call">
+                                <div className="left">
+                                </div>
+                                <div className="right">                                    </div>
+                            </div>
+                        </div>
+                    </section>*/}
+
                 </div>
             </div>
-        </section>
+        </header>
+
     </div>)
 };

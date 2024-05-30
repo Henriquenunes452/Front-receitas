@@ -1,4 +1,5 @@
-import temperos from "../assets/imgs/temperos.png";
+import time from "../assets/imgs/time.png"
+import time2 from "../assets/imgs/time2.png";
 import comida1 from "../assets/imgs/imgcomida1.png";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -19,7 +20,7 @@ export default function Receitas(){
                     <Menu/>
                     <div className="call">
                         <div className="left">
-                            <img src={temperos} alt=""/>
+                            <img src={comida1} alt=""/>
                         </div>
                         <div className="right">
                             <h1 className="color-laranja text-gd">Receitas Deliciosas</h1>
@@ -49,7 +50,7 @@ export default function Receitas(){
                             <button>Saiba Mais</button>
                         </div>
                         <div className="right">
-                            <img src={comida1} alt=""/>
+                            <img className="fototime"src={time} alt=""/>
                         </div>
                     </div>
                 </div>

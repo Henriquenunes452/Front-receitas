@@ -119,12 +119,14 @@ html {
     align-items: center;
     justify-content: center;
     padding: 0 2%;
+
 }
 
 img {
     width: 70%;
     height: 100%;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 button {
@@ -421,4 +423,26 @@ textarea {
 
 .logo:hover {
     cursor: pointer;
+}
+
+.rightInfo {
+    width: 50%;
+    min-height: 600px;
+    max-height: 800px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 2%;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.rightInfo p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rightInfo span {
+    font-size: 30px;
 }
