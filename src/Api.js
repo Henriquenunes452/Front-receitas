@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const baseAPI = axios.create({
-    baseURL: 'http://localhost:3001/api' // https://sitereceitas.onrender.com/ 
+    baseURL: 'https://sitereceitas-ce6j.onrender.com/api' //http://localhost:3001/api
 })
 
 function requestConfig(nome, cpf) {
@@ -11,6 +11,10 @@ function requestConfig(nome, cpf) {
         cpf: cpf
       },
     };
+}
+
+async function buscarReceitas(){
+    return await baseAPI.get("/receita");
 }
 
 async function cadastrarReceitas({nome_receita, categoria, ingredientes, modo_preparo, tempo_preparo, imagem},{nome,cpf}) {
@@ -30,6 +34,7 @@ async function login({nome, cpf}) {
 }
 
 const api = {
+    buscarReceitas,
     cadastrarReceitas,
     cadastrar,
     login,
