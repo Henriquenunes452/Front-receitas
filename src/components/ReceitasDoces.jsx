@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import Menu from "./compartilhado/Menu";
 import api from "../Api";
+import { useNavigate } from "react-router-dom";
 
 
 export default function ReceitasDoces(){
     const [receitas, setReceitas] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(()=>{
         window.scrollTo(0,0);
@@ -35,7 +37,7 @@ export default function ReceitasDoces(){
 
                     {receitas.map(receita=>{ return (
                         <div key={receita.id} className="receitasOrdem">
-                                <button className="rctslg">
+                                <button className="rctslg" onClick={()=>{navigate(`/receitas/${receita.id}`)}}>
                                     <h2>{receita.nome_receita}</h2>
                                     <img className="fts" src={receita.imagem} alt=""/>
                                 </button>

@@ -13,6 +13,10 @@ function requestConfig(nome, cpf) {
     };
 }
 
+async function buscarUmaReceita(id){
+    return await baseAPI.get(`/receita/${id}`)
+}
+
 async function buscarReceitas(){
     return await baseAPI.get("/receita");
 }
@@ -34,6 +38,7 @@ async function login({nome, cpf}) {
 }
 
 const api = {
+    buscarUmaReceita,
     buscarReceitas,
     cadastrarReceitas,
     cadastrar,
