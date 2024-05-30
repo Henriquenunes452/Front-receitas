@@ -32,14 +32,16 @@ export default function ReceitasDoces(){
                 <h2 className="text-md color-cinza-1">Receitas Doces</h2>
 
                 <div className="receitaContainer">
-                {receitas.map(receita=>{ return (
-                    <div key={receita.id} className="box">
-                            <button className="rctslg">
-                                <h2>{receita.nome_receita}</h2>
-                                <img className="fts" src={receita.imagem} alt=""/>
-                            </button>
-                    </div>)
-                })}
+
+                    {receitas.map(receita=>{ return (
+                        <div key={receita.id} className="receitasOrdem">
+                                <button className="rctslg">
+                                    <h2>{receita.nome_receita}</h2>
+                                    <img className="fts" src={receita.imagem} alt=""/>
+                                </button>
+                        </div>)
+                    })}
+
                 </div>
             </div>
 

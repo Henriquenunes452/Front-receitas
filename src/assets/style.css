@@ -7,8 +7,11 @@
     font-family: 'Poppins', sans-serif;
     background: url(imgs/bg1.png) no-repeat;
     background-size: cover;
-    height: 100%;
+    width: 100%;
     overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
 }
 
 html {
@@ -378,11 +381,11 @@ input :hover {
     margin: 50px;
 }
 
-.receitasuser button {
+button {
     border-radius: 15px;
 }
 
-.receitasuser button:hover {
+button:hover {
     box-shadow: 3px 0px 15px #fa5e00;
 }
 
@@ -393,4 +396,29 @@ input :hover {
 }
 .smallInput {
     width: min-content;
+}
+
+img:hover{
+    box-shadow: 3px 0px 15px #fa5e00;
+}
+.receitasOrdem{
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin: 30px;
+}
+
+.receitaContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+}
+
+.logo:hover {
+    cursor: pointer;
 }

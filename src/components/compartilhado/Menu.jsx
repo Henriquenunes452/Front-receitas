@@ -12,7 +12,7 @@ export default function Menu() {
 
     return (
         <div className="menu">
-            <div className="logo"></div>
+            <div className="logo" onClick={()=>{navigate("/receitas")}}></div>
             <div className="desktop-menu">
                 <ul>
                     <li><a href="#home">Home</a></li>
